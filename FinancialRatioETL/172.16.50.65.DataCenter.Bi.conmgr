@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Barizo"
+  DTS:DTSID="{C99EC65C-BDA2-40C9-A440-CEA036764EE7}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Barizo_Pass]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::Barizo_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::Barizo_User]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Retain="True"
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=SV16050065;User ID=Bi;Initial Catalog=DataCenter;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAelc04eLINUmE301FDNnwCQAAAAACAAAAAAADZgAAwAAAABAAAACy9aIQf3mNy5PPro1BMxJCAAAAAASAAACgAAAAEAAAAONQrjH0bhOpq3DxH1GEKcaAAAAAaqshbfXPgEQygJCA883OJF03fZrojRou1DdG60m7JV0Gpn2EuiaQora3g4+ovLTkzLLjNaL/Ma82jtjanZxtskMn8U4pV8ldQZj3hGIIz8VVVPEXBNtAfb32zkmYuY+6D7HyCrESWCaAsio90qMDV5SOPaslMtlH0kFv8HR4IDYUAAAAA+n8gIwg8u7J8uXZGH/+YmtgnQo=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

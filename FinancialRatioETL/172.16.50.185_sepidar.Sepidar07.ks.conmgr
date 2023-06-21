@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Sepidar"
+  DTS:DTSID="{418BDEEB-9DC2-479F-97E5-B5E40FA7D624}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=172.16.50.185\sepidar;User ID=ks;Initial Catalog=Sepidar07;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAelc04eLINUmE301FDNnwCQAAAAACAAAAAAADZgAAwAAAABAAAAAnR8TvnKuXJMnC+ZM01j9cAAAAAASAAACgAAAAEAAAAJ3aJbo0sQOOFnx7H0ggE3h4AAAA/uzmfXr5KdRhms2UJatbT+yDr5H1/Ls8KZf99KeUri7mIND8qJtCPhu7x10swMNMmMHCyQY9o2tD1zykHpxiNEuupcfSOcYq5MShfLo7MI9R0sKea6e/lvKBgNchgVOl8XVjsR3JXpFD9Z9eAgzATvJTYhWsMan8FAAAAHoKUEXe6GlzYgWiuH8M2ioRGsae</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

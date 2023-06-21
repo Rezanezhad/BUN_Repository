@@ -1,0 +1,66 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0bd2e6cf-dd7b-4fde-91df-3c4e394598cb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>BunRepository</ID>
+  <Name>BunRepository</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <Translations>
+    <Translation dwd:design-time-name="d37b0a21-c83e-44aa-8ef7-02c3d8fc5c0e">
+      <Language>1065</Language>
+    </Translation>
+    <Translation dwd:design-time-name="83751e48-a43b-44e8-b0c0-782639762fa1">
+      <Language>1033</Language>
+    </Translation>
+  </Translations>
+  <EstimatedSize>536867394</EstimatedSize>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Accounts>
+    <Account dwd:design-time-name="5480a81f-829e-44aa-9e3e-23976440d97a">
+      <AccountType>Income</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+    </Account>
+    <Account dwd:design-time-name="4bfa20f7-cd3f-49de-8789-d44295cfbbfd">
+      <AccountType>Balance</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+    </Account>
+    <Account dwd:design-time-name="18900821-4e03-4f67-aa1b-32aece03a45a">
+      <AccountType>Flow</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+    </Account>
+    <Account dwd:design-time-name="84cf579b-553b-4c5c-ad3a-1e36cc4c5ec8">
+      <AccountType>Statistical</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+    </Account>
+  </Accounts>
+  <DatabasePermissions>
+    <DatabasePermission dwd:design-time-name="5397b42a-5523-49d1-a844-80094040021d">
+      <ID>DatabasePermission</ID>
+      <Name>DatabasePermission</Name>
+      <CreatedTimestamp>2020-02-29T07:25:12.02Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-06-20T14:13:56.36Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Process>true</Process>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <Administer>true</Administer>
+    </DatabasePermission>
+    <DatabasePermission dwd:design-time-name="92fd0f69-63bd-4e27-abe8-8b4d2b8ab39f">
+      <ID>DatabasePermission 129</ID>
+      <Name>DatabasePermission 129</Name>
+      <CreatedTimestamp>2020-02-29T07:25:12.02Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-06-20T14:13:56.36Z</LastSchemaUpdate>
+      <RoleID>Role 129</RoleID>
+      <Process>true</Process>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <Administer>true</Administer>
+    </DatabasePermission>
+  </DatabasePermissions>
+</Database>

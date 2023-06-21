@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Rahkaran"
+  DTS:DTSID="{BED05D08-B406-43E6-BB23-9702CFC286D4}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Rahkaran_Pass]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::Rahkaran_ServerName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::Rahkaran_User]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=SV016050088;User ID=ETL_SSIS;Initial Catalog=KheiliSabz_sg3;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAelc04eLINUmE301FDNnwCQAAAAACAAAAAAADZgAAwAAAABAAAAC73aQ7JI7UNHfiaxldVJ5OAAAAAASAAACgAAAAEAAAAEBtvfG8pG2MMAwV6NsJtiKAAAAAP42iphriAoSRhaUlivJphutdl+lM6ORPMZhPoW5UbxXKyqJD6DaErIb2qCpPSpAcLx3lwKv2EYlMVLrwZ45UnHsgSBGcsKk1t9qBWP7gRjWkpSVM4PnDHy4RJCtG+fxmCIBclasDBY6dENEhV79EkQ1mpfRMFypjQfE2h2ImdgEUAAAAkjI3wVZ30q8r2beaE6mtCLLl9Rs=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

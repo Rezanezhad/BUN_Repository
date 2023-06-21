@@ -1,0 +1,1559 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SLP DIM Product Union With Product</ID>
+  <Name>SLP DIM Product Union With Product</Name>
+  <CreatedTimestamp>2023-05-30T09:40:58.71Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-20T14:13:46.656667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2997" scrolltop="-5900" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="16801" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SLP_DIM_Product_Union_With_Product" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="SLP_DIM_Product_Union_With_Product" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2997</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5900</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2023-06-21T03:10:46.536667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>SABZDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>Product Id</ID>
+      <Name>Product Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>BigInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Product_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Product_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Product Code</AttributeID>
+          <Name>Product Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sdate</AttributeID>
+          <Name>Sdate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>First In Forecast Value</AttributeID>
+          <Name>First In Forecast Value</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Expr1</AttributeID>
+          <Name>Expr1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Parent Product Id</AttributeID>
+          <Name>Parent Product Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Iran Code</AttributeID>
+          <Name>Product Iran Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Group Id</AttributeID>
+          <Name>Product Group Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Company Id</AttributeID>
+          <Name>Company Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Origin Id</AttributeID>
+          <Name>Product Origin Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Unit Id</AttributeID>
+          <Name>Unit Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Grade Id</AttributeID>
+          <Name>Grade Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Lesson Id</AttributeID>
+          <Name>Lesson Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Parent Id</AttributeID>
+          <Name>Product Parent Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Organization ID</AttributeID>
+          <Name>Organization ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Fee</AttributeID>
+          <Name>Product Fee</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Grade Group ID</AttributeID>
+          <Name>Product Grade Group ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Major Id</AttributeID>
+          <Name>Major Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Major Title</AttributeID>
+          <Name>Major Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Code 5 Number</AttributeID>
+          <Name>Code 5 Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Berand</AttributeID>
+          <Name>Berand</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Small Name</AttributeID>
+          <Name>Small Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Eng Name</AttributeID>
+          <Name>Eng Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Collections</AttributeID>
+          <Name>Collections</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>GROUPS</AttributeID>
+          <Name>GROUPS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Detail Asli</AttributeID>
+          <Name>Detail Asli</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Detail Far Ie 1</AttributeID>
+          <Name>Detail Far Ie 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Detail Far Ie 2</AttributeID>
+          <Name>Detail Far Ie 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Detail Far Ie 3</AttributeID>
+          <Name>Detail Far Ie 3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Mahdude Senni</AttributeID>
+          <Name>Mahdude Senni</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Rade Senni</AttributeID>
+          <Name>Rade Senni</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Ghate Ketab</AttributeID>
+          <Name>Ghate Ketab</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Jeld</AttributeID>
+          <Name>Jeld</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Conut Barg</AttributeID>
+          <Name>Conut Barg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Count Cartoon</AttributeID>
+          <Name>Count Cartoon</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Launch Time</AttributeID>
+          <Name>Launch Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Modire Talif</AttributeID>
+          <Name>Modire Talif</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Maghta</AttributeID>
+          <Name>Maghta</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Paie</AttributeID>
+          <Name>Paie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sabad</AttributeID>
+          <Name>Sabad</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Reshteh</AttributeID>
+          <Name>Reshteh</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Dars</AttributeID>
+          <Name>Dars</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sabad Madar</AttributeID>
+          <Name>Sabad Madar</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sabad Kala</AttributeID>
+          <Name>Sabad Kala</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Business</AttributeID>
+          <Name>Business</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Statuses</AttributeID>
+          <Name>Statuses</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Code Ref Product</AttributeID>
+          <Name>Code Ref Product</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Group Title</AttributeID>
+          <Name>Product Group Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Product Grade Title</AttributeID>
+          <Name>Product Grade Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sales Organization Title</AttributeID>
+          <Name>Sales Organization Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Lesson Title</AttributeID>
+          <Name>Lesson Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Unit Title</AttributeID>
+          <Name>Unit Title</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Code</ID>
+      <Name>Product Code</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Product_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Product_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sdate</ID>
+      <Name>Sdate</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>sdate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1024</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>sdate</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>First In Forecast Value</ID>
+      <Name>First In Forecast Value</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>FirstInForecast_Value</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>FirstInForecast_Value</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Expr1</ID>
+      <Name>Expr1</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Expr1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Expr1</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Parent Product Id</ID>
+      <Name>Parent Product Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ParentProduct_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>16</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ParentProduct_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Iran Code</ID>
+      <Name>Product Iran Code</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Product_IranCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Product_IranCode</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Group Id</ID>
+      <Name>Product Group Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ProductGroup_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ProductGroup_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Company Id</ID>
+      <Name>Company Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Company_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Company_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Origin Id</ID>
+      <Name>Product Origin Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ProductOrigin_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ProductOrigin_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Unit Id</ID>
+      <Name>Unit Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Unit_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Unit_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Grade Id</ID>
+      <Name>Grade Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Grade_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Grade_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Lesson Id</ID>
+      <Name>Lesson Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Lesson_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Lesson_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Parent Id</ID>
+      <Name>Product Parent Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ProductParent_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ProductParent_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Organization ID</ID>
+      <Name>Organization ID</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>OrganizationID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>OrganizationID</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Fee</ID>
+      <Name>Product Fee</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Product_Fee</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Product_Fee</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Grade Group ID</ID>
+      <Name>Product Grade Group ID</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ProductGrade_Group_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ProductGrade_Group_ID</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Major Id</ID>
+      <Name>Major Id</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Major_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Major_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Major Title</ID>
+      <Name>Major Title</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Major_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Major_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Code 5 Number</ID>
+      <Name>Code 5 Number</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Code_5_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Code_5_Number</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Berand</ID>
+      <Name>Berand</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Berand</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Berand</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Small Name</ID>
+      <Name>Small Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>SmallName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>SmallName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Eng Name</ID>
+      <Name>Eng Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>EngName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>EngName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Collections</ID>
+      <Name>Collections</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Collections</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Collections</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>GROUPS</ID>
+      <Name>GROUPS</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>GROUPS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>GROUPS</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Detail Asli</ID>
+      <Name>Detail Asli</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>DetailAsli</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>DetailAsli</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Detail Far Ie 1</ID>
+      <Name>Detail Far Ie 1</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Detail_Far_ie_1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Detail_Far_ie_1</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Detail Far Ie 2</ID>
+      <Name>Detail Far Ie 2</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Detail_Far_ie_2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Detail_Far_ie_2</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Detail Far Ie 3</ID>
+      <Name>Detail Far Ie 3</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Detail_Far_ie_3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Detail_Far_ie_3</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Mahdude Senni</ID>
+      <Name>Mahdude Senni</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Mahdude_senni</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Mahdude_senni</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Rade Senni</ID>
+      <Name>Rade Senni</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>RadeSenni</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>RadeSenni</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Ghate Ketab</ID>
+      <Name>Ghate Ketab</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Ghate_ketab</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Ghate_ketab</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Jeld</ID>
+      <Name>Jeld</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Jeld</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Jeld</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Conut Barg</ID>
+      <Name>Conut Barg</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Conut_Barg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Conut_Barg</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Count Cartoon</ID>
+      <Name>Count Cartoon</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Count_Cartoon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Count_Cartoon</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Launch Time</ID>
+      <Name>Launch Time</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>launch_Time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>launch_Time</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Modire Talif</ID>
+      <Name>Modire Talif</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Modire_talif</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Modire_talif</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Maghta</ID>
+      <Name>Maghta</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Maghta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Maghta</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Paie</ID>
+      <Name>Paie</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Paie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Paie</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sabad</ID>
+      <Name>Sabad</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Sabad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Sabad</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Reshteh</ID>
+      <Name>Reshteh</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Reshteh</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Reshteh</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Dars</ID>
+      <Name>Dars</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Dars</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Dars</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sabad Madar</ID>
+      <Name>Sabad Madar</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Sabad_madar</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Sabad_madar</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sabad Kala</ID>
+      <Name>Sabad Kala</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>sabad_kala</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>sabad_kala</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Business</ID>
+      <Name>Business</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>business</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>business</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Statuses</ID>
+      <Name>Statuses</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>statuses</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>statuses</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Code Ref Product</ID>
+      <Name>Code Ref Product</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Code_Ref_Product</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Code_Ref_Product</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Group Title</ID>
+      <Name>Product Group Title</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ProductGroup_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ProductGroup_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Product Grade Title</ID>
+      <Name>Product Grade Title</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>ProductGrade_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>ProductGrade_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sales Organization Title</ID>
+      <Name>Sales Organization Title</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>SalesOrganization_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>SalesOrganization_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Lesson Title</ID>
+      <Name>Lesson Title</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>900</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Lesson_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>900</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Lesson_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Unit Title</ID>
+      <Name>Unit Title</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+            <ColumnID>Unit_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>SLP_DIM_Product_Union_With_Product</TableID>
+          <ColumnID>Unit_Title</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
